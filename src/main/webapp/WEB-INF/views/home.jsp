@@ -3,6 +3,7 @@
 <%@ taglib prefix="f" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@	taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 
+<!doctype html>
 <html lang="en">
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 
@@ -12,125 +13,12 @@
 
 <body>
 
-	<!--========================================================
-                          HEADER
-=========================================================-->
-	<header id="header" class="main-page">
-		<div class="info">
-			<div class="container">
-				<div class="row">
-					<div class="grid_3">
-						<address>9870 St Vincent Place, Glasgow, DC 45 Fr 45.</address>
-					</div>
-					<div class="grid_2">
-						<span class="link"><a href="#">contact@demolink.org</a></span>
-					</div>
-					<div class="grid_2">
-						<span class="phone">+1 800 559 6580</span>
-					</div>
-					<div class="grid_5">
-						<ul class="socials1">
-							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-							<li><a href="#"><i class="fa fa-rss"></i></a></li>
-							<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-							<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="stuck_container">
-			<div class="wrapper">
-				<div class="container">
-					<div class="row">
-						<div class="grid_12">
-							<h1>
-								<a href="index-2.html"> <span class="main">ITcon</span><br>
-									<span class="secondary">internet consulting company</span>
-								</a>
-							</h1>
-							<nav>
-								<ul class="sf-menu">
-									<li class="current"><a href="index-2.html">Home</a></li>
-									<li><a href="index-1.html">About</a>
-										<ul>
-											<li><a href="#">History</a></li>
-											<li><a href="#">News</a>
-												<ul>
-													<li><a href="#">Latest</a></li>
-													<li><a href="#">Archive</a></li>
-												</ul></li>
-											<li><a href="#">Testimonials</a></li>
-										</ul></li>
-									<li><a href="index-3.html">Services</a></li>
-									<li><a href="index-4.html">Projects</a></li>
-									<li><a href="index-5.html">Blog</a></li>
-									<li><a href="index-6.html">Contacts</a></li>
-								</ul>
-								<div class="clearfix"></div>
-							</nav>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
+	<c:import url="../views/jspf/header.jsp" />
 
-	<!--========================================================
-                          CONTENT
-=========================================================-->
 	<section id="content">
-		<div class="slider-wrapper">
-			<div id="camera_wrap">
-				<div data-src="resources/images/slider1.png">
-					<div class="caption fadeIn">
-						<div class="container">
-							<div class="row">
-								<div class="grid_8 preffix_2">
-									<span class="pre-header">Welcome!</span>
-									<h6>
-										Networking.<br>Database management.<br>Application
-										development.
-									</h6>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div data-src="resources/images/slider2.png">
-					<div class="caption fadeIn">
-						<div class="container">
-							<div class="row">
-								<div class="grid_8 preffix_2">
-									<span class="pre-header">Welcome!</span>
-									<h6>
-										Networking.<br>Database management.<br>Application
-										development.
-									</h6>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div data-src="resources/images/slider3.png">
-					<div class="caption fadeIn">
-						<div class="container">
-							<div class="row">
-								<div class="grid_8 preffix_2">
-									<span class="pre-header">Welcome!</span>
-									<h6>
-										Networking.<br>Database management.<br>Application
-										development.
-									</h6>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="clearfix"></div>
-		</div>
+
+		<c:import url="../views/jspf/slider.jsp" />
+
 		<div class="banner1 wow fadeInLeft">
 			<div class="container">
 				<div class="row">
@@ -347,77 +235,27 @@
 
 	</section>
 
-
-	<!--========================================================
-                          FOOTER
-=========================================================-->
-	<footer id="footer">
-		<div class="wrapper wow fadeInLeft">
-			<div class="container">
-				<div class="row">
-					<div class="grid_3 __float-right">
-						<span class="h8">About us</span>
-						<ul class="list2">
-							<li><a href="#">Customer focus</a></li>
-							<li><a href="#">Performance</a></li>
-							<li><a href="#">Affiliates</a></li>
-							<li><a href="#">CV Review</a></li>
-						</ul>
-					</div>
-					<div class="grid_3 __float-right">
-						<span class="h8">Support menu</span>
-						<ul class="list2">
-							<li><a href="#">Lost Password?</a></li>
-							<li><a href="#">Forgot your Username?</a></li>
-							<li><a href="#">Your Membership</a></li>
-							<li><a href="#">Your Account</a></li>
-							<li><a href="#">Support Forum</a></li>
-						</ul>
-					</div>
-					<div class="grid_3 __float-right">
-						<span class="h8">Address</span>
-						<address>
-							<span>9870 St Vincent Place,</span> <span>Glasgow, DC 45
-								Fr 45.</span> <span>Freephone: +1 800 559 6580</span> <span><a
-								href="#">mail@demolink.org</a></span>
-						</address>
-					</div>
-					<div class="grid_3">
-						<span class="h8">Follow us</span>
-						<ul class="socials1">
-							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-							<li><a href="#"><i class="fa fa-rss"></i></a></li>
-							<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-							<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-						</ul>
-						<div class="privacy-block">
-							&copy; <span id="copyright-year"></span> <a href="index-7.html">Privacy
-								policy</a>
-							<!--{%FOOTER_LINK} -->
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
+	<c:import url="../views/jspf/footer.jsp" />
 
 	<script src="resources/js/script.js"></script>
+	
 	<script type="text/javascript">
-		var _gaq = _gaq || [];
-		_gaq.push([ '_setAccount', 'UA-7078796-5' ]);
-		_gaq.push([ '_trackPageview' ]);
-		(function() {
-			var ga = document.createElement('script');
-			ga.type = 'text/javascript';
-			ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl'
-					: 'http://www')
-					+ '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0];
-			s.parentNode.insertBefore(ga, s);
-		})();
-	</script>
+// 		var _gaq = _gaq || [];
+// 		_gaq.push([ '_setAccount', 'UA-7078796-5' ]);
+// 		_gaq.push([ '_trackPageview' ]);
+// 		(function() {
+// 			var ga = document.createElement('script');
+// 			ga.type = 'text/javascript';
+// 			ga.async = true;
+// 			ga.src = ('https:' == document.location.protocol ? 'https://ssl'
+// 					: 'http://www')
+// 					+ '.google-analytics.com/ga.js';
+// 			var s = document.getElementsByTagName('script')[0];
+// 			s.parentNode.insertBefore(ga, s);
+// 		})();
+	
+ 	</script> 
+ 	
 </body>
 
 <!-- Mirrored from livedemo00.template-help.com/wt_52067/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 30 Sep 2015 18:10:27 GMT -->

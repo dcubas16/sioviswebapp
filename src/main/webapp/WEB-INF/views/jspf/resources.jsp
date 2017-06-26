@@ -13,13 +13,18 @@
 <script src="resources/js/jquery-migrate-1.2.1.js"></script>
 <script src="resources/js/camera.js"></script>
 <script src="resources/js/sForm.js"></script>
+
 <!--[if (gt IE 9)|!(IE)]><! -->
 <script src="resources/js/jquery.mobile.customized.min.js"></script>
+
+<!-- Aqui esta el problema -->
 <script src="resources/js/wow/wow.js"></script>
+
+
 <script>
 	$(document).ready(function() {
 		if ($('html').hasClass('desktop')) {
-			new WOW().init();
+// 			new WOW().init();
 		}
 	});
 </script>
@@ -34,13 +39,30 @@
 			height : '43.1875%',
 			caption : true,
 			navigation : true,
-			fx : 'simpleFade'
+			fx : 'simpleFade',
+			
+			
+// 			overlayer : false,
+			time : 3500
 		});
-		$('#form1').sForm({
-			ownerEmail : '#',
-			sitename : 'sitename.link'
-		});
+// 		$('#form1').sForm({
+// 			ownerEmail : '#',
+// 			sitename : 'sitename.link'
+// 		});
 	});
+	
+	$(window).on("wheel mousewheel", function(e){
+	    if(e.originalEvent.deltaY > 0) {
+	        e.preventDefault();
+	        return;
+	    } else if (e.originalEvent.wheelDeltaY < 0) {
+	        e.preventDefault();
+	        return;
+	    }    
+	});
+	
+	
+	
 </script>
 <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>

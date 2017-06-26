@@ -18,10 +18,10 @@
 		<property name="defaultEncoding" value="UTF-8" />
 	</bean>
 
-<!-- 	Declare the Resolver -->
-<!-- 	<bean id="localeResolver" -->
-<!-- 		class="org.springframework.web.servlet.i18n.SessionLocaleResolver"> -->
-<!-- 		<property name="defaultLocale" value="es_PE" /> -->
-<!-- 	</bean> -->
+	<!-- 	Declare the Resolver -->
+	<bean id="localeResolver"
+		class="org.springframework.web.servlet.i18n.SessionLocaleResolver">
+		<property name="defaultLocale" value="es_PE" />
+	</bean>
 
 </beans>
