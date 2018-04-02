@@ -718,8 +718,7 @@
 		
 		
 	
-//		$('.camera_stop',camera_thumbs_wrap).live('click',function(){
-		$('.camera_stop',camera_thumbs_wrap).on( "click", "a.offsite",function(){		
+		$('.camera_stop',camera_thumbs_wrap).live('click',function(){
 			autoAdv = false;
 			elem.addClass('paused');
 			if($('.camera_stop',camera_thumbs_wrap).length){
@@ -735,8 +734,7 @@
 			}
 		});
 	
-//		$('.camera_play',camera_thumbs_wrap).live('click',function(){
-		$('.camera_play',camera_thumbs_wrap).on( "click", "a.offsite",function(){
+		$('.camera_play',camera_thumbs_wrap).live('click',function(){
 			autoAdv = true;
 			elem.removeClass('paused');
 			if($('.camera_play',camera_thumbs_wrap).length){

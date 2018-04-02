@@ -11,11 +11,18 @@
 <c:import url="WEB-INF/views/jspf/resources.jsp" />
 </head>
 <body>
-
+sadasdasdasda
 </body>
 <script>
 
+
+
  $(document).ready(function () {
+	 setTimeout(
+			  function() 
+			  {
+			    //do something special
+			  }, 10000);
         window.location = "home.htm";
 });
  
